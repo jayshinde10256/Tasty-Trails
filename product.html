@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Food Delivery - Product</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="img/favicon1.png">
+
+  <style>
+    /* Fotter */
+    body {
+      font-family: Montserrat;
+    }
+
+    .navbar-brand {
+      font-size: 40px;
+      margin-right: 1rem;
+    }
+
+    .navbar-nav {
+      font-size: 20px;
+      margin-left: 15px;
+    }
+
+    
+
+    .page-header {
+      padding-top: 12rem;
+      padding-bottom: 6rem;
+      background: url(img/pexels-lukas-952353.jpg) top right no-repeat;
+      height: 70vh;
+      background-size: cover;
+    }
+
+    .product-headding {
+      color: white;
+      font-size: 50px;
+      top: 0;
+      margin-bottom: 10rem;
+    }
+
+    .product-item {
+      box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    }
+
+    .product-item img {
+      transition: .5s;
+    }
+
+    .product-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .product-item small a:hover {
+      color: var(--primary) !important;
+    }
+
+    .footer .btn.btn-social {
+      margin-right: 5px;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--light);
+      border: 1px solid #FFFFFF;
+      border-radius: 35px;
+      transition: .3s;
+    }
+
+    .footer .btn.btn-social:hover {
+      color: var(--primary);
+    }
+
+    .footer .btn.btn-link {
+      display: block;
+      margin-bottom: 5px;
+      padding: 0;
+      text-align: left;
+      color: #FFFFFF;
+      font-size: 15px;
+      font-weight: normal;
+      text-transform: capitalize;
+      transition: .3s;
+    }
+
+    .footer .btn.btn-link::before {
+      position: relative;
+      content: "\f105";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-right: 10px;
+    }
+
+    .footer .btn.btn-link:hover {
+      letter-spacing: 1px;
+      box-shadow: none;
+    }
+
+    .footer .copyright {
+      padding: 25px 0;
+      font-size: 15px;
+      border-top: 1px solid rgba(256, 256, 256, .1);
+    }
+
+    .footer .copyright a {
+      color: var(--light);
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-info p {
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-info i {
+      margin-right: 0.5em;
+    }
+
+    .footer .footer-menu a {
+      margin-right: 15px;
+      padding-right: 15px;
+      border-right: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .newsletter {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .newsletter p {
+      margin-bottom: 0.5rem;
+    }
+    .footer .footer-menu a:last-child {
+      margin-right: 0;
+      padding-right: 0;
+      border-right: none;
+    }
+ 
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <img src="img/favicon1.png" alt="" width="70rem">
+      <a class="navbar-brand text-white" href="#">Tasty-Trails</a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item text-white">
+            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="product.html">Fruits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="service.html">Bakery Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Explore
+            </a>
+            <ul class="dropdown-menu text-white">
+              <li><a class="dropdown-item" href="#Menu1">Menu</a></li>
+              <li><a class="dropdown-item" href="#about">About</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="about.html">Our Team</a></li>
+            </ul>
+          </li>>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header Start -->
+  <div class="container-fluid page-header  ">
+    <div class="container">
+      <h1 class="product-headding">FRUITS AND VEGETABLES</h1>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+  <!-- About Start -->
+  <div class="container-xxl py-5 mt-5" id="about">
+    <div class="container">
+      <div class="row g-1">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="row position-relative h-100">
+            <div class="col-12 align-items-center">
+              <img class="img-fluid rounded" src="img/product-about-1.jpg" width="400px">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 about-sec">
+          <div class="h-100">
+            <h1 class="display-6 mb-4">Perfect blend of flavors with our mouthwatering pizzas and burgers</h1>
+
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quos adipisci quae sint laboriosam, asperiores repellendus. Eligendi, cumque quos? Officia fuga eius quisquam quo totam enim minus hic harum dolorum?</p>
+
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quos adipisci quae sint laboriosam, asperiores repellendus. Eligendi, cumque quos? Officia fuga eius quisquam quo totam enim minus hic harum dolorum?</p>
+
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quos adipisci quae sint laboriosam, asperiores repellendus. Eligendi, cumque quos? Officia fuga eius quisquam quo totam enim minus hic harum dolorum?</p>
+
+            <div class="row g-2 mb-4">
+              <div class="col-sm-6">
+                <i class="fa fa-check text-primary me-2"></i>Quality Pizza
+              </div>
+              <div class="col-sm-6">
+                <i class="fa fa-check text-primary me-2"></i>Custom Products
+              </div>
+              <div class="col-sm-6">
+                <i class="fa fa-check text-primary me-2"></i>Online Order
+              </div>
+              <div class="col-sm-6">
+                <i class="fa fa-check text-primary me-2"></i>Home Delivery
+              </div>
+            </div>
+            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- Product Start -->
+  <div class="container-xxl py-5">
+    <div class="container" id="Menu1">
+      <div class="row g-0 gx-5 align-items-end">
+        <div class="col-lg-6">
+          <div class="section-header text-start mb-5  style=" max-width: 500px;>
+            <h1>Our Fruit and vegetables </h1>
+            <p>Fruit and vegetables are a good source of vitamins and minerals, including folate, vitamin C and
+              potassium.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row g-4">
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="product-item">
+            <div class="position-relative bg-light overflow-hidden">
+              <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
+
+            </div>
+            <div class="text-center p-4">
+              <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
+              <span class="text-primary me-1">$19.00</span>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="product-item">
+            <div class="position-relative bg-light overflow-hidden">
+              <img class="img-fluid w-100" src="img/product-2.jpg" alt="">
+
+            </div>
+            <div class="text-center p-4">
+              <a class="d-block h5 mb-2" href="">Pineapple</a>
+              <span class="text-primary me-1">$19.00</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="product-item">
+            <div class="position-relative bg-light overflow-hidden">
+              <img class="img-fluid w-100" src="img/product-3.jpg" alt="">
+
+            </div>
+            <div class="text-center p-4">
+              <a class="d-block h5 mb-2" href="">chilli</a>
+              <span class="text-primary me-1">$19.00</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="product-item">
+            <div class="position-relative bg-light overflow-hidden">
+              <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
+
+            </div>
+            <div class="text-center p-4">
+              <a class="d-block h5 mb-2" href="">strawberry</a>
+              <span class="text-primary me-1">$19.00</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="product-item">
+            <div class="position-relative bg-light overflow-hidden">
+              <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
+
+            </div>
+            <div class="text-center p-4">
+              <a class="d-block h5 mb-2" href="">Spinach</a>
+              <span class="text-primary me-1">$19.00</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="product-item">
+            <div class="position-relative bg-light overflow-hidden">
+              <img class="img-fluid w-100" src="img/product-6.jpg" alt="">
+
+            </div>
+            <div class="text-center p-4">
+              <a class="d-block h5 mb-2" href="">Orange</a>
+              <span class="text-primary me-1">$19.00</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="product-item">
+            <div class="position-relative bg-light overflow-hidden">
+              <img class="img-fluid w-100" src="img/product-7.jpg" alt="">
+
+            </div>
+            <div class="text-center p-4">
+              <a class="d-block h5 mb-2" href="">potato</a>
+              <span class="text-primary me-1">$19.00</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="product-item">
+            <div class="position-relative bg-light overflow-hidden">
+              <img class="img-fluid w-100" src="img/product-8.jpg" alt="">
+
+            </div>
+            <div class="text-center p-4">
+              <a class="d-block h5 mb-2" href="">Banana</a>
+              <span class="text-primary me-1">$19.00</span>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Product End -->
+  <!-- Footer -->
+ <div class="container-fluid bg-dark text-light footer pt-5 mt-5 ">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6 ">
+          <h4 class="section-title  text-start text-primary mb-4">Company</h4>
+          <div class="d-flex flex-column">
+            <a class="text-decoration-none text-white mb-1" href="">About Us</a>
+            <a class="text-decoration-none text-white mb-1" href="">Contact Us</a>
+            <a class="text-decoration-none text-white mb-1" href="">Reservation</a>
+            <a class="text-decoration-none text-white mb-1" href="">Privacy Policy</a>
+            <a class="text-decoration-none text-white mb-1" href="">Terms & Condition</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+          <div class="contact-info">
+            <p class="mb-2 margins"><i class="fa fa-map-marker-alt"></i>Mumbai Naka nashik</p>
+            <p class="mb-2 margins"><i class="fa fa-phone-alt"></i>937045809</p>
+            <p class="mb-2 margins"><i class="fa fa-envelope"></i>jayshinde4554@.com</p>
+          </div>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href="https://twitter.com/JayShin18755555"><i
+                class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social"
+              href="https://www.facebook.com/profile.php?id=100071240120392"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/jay_shinde__10/"><i
+                class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/jay-shinde-b5634325a/"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+          <h5 class="text-light fw-normal">Monday - Saturday</h5>
+          <h5 class="text-light fw-normal">Sunday</h5>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="newsletter">
+            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact Us</h4>
+            <p>Enter your email</p>
+            <div class="position-relative mx-auto" style="max-width: 400px;">
+              <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+              <button type="button" class="btn btn-primary py-2 position-absolute top-0  mt-5">SignUp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/ef9a43ac85.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

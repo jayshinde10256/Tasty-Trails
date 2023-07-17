@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Food Delivery - Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="img/favicon1.png">
+  <style>
+    body {
+      font-family: Montserrat;
+    }
+
+    .navbar-brand {
+      font-size: 40px;
+      margin-right: 1rem;
+    }
+
+    .navbar-nav {
+      font-size: 20px;
+      margin-left: 15px;
+    }
+
+    .button1 {
+      font-size: 18px;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      padding: 0.7em 2em;
+      border: 3px solid #0084ff;
+      border-radius: 2px;
+      position: relative;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+      color: #0084ff;
+      text-decoration: none;
+      transition: 0.3s ease all;
+      z-index: 1;
+    }
+
+    .button1:before {
+      transition: 0.5s all ease;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      opacity: 0;
+      content: '';
+      background-color: #0084ff;
+      z-index: -1;
+    }
+
+    .button1:hover,
+    .button1:focus {
+      color: white;
+    }
+
+    .button1:hover {
+      transition: 0.5s all ease;
+      left: 0;
+      right: 0;
+      opacity: 1;
+    }
+
+    .hero-header {
+      background: url(img/Firefly\ Inpaint\ 20230710182222.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .hero-header img {
+      animation: imgRotate 50s linear infinite;
+    }
+
+    @keyframes imgRotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .service-item {
+      box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+      transition: .5s;
+    }
+
+    .service-item:hover {
+      background: var(--primary);
+    }
+
+    .service-item:hover * {
+      color: var(--light) !important;
+    }
+
+    /* Footer */
+    .footer .btn.btn-social {
+      margin-right: 5px;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--light);
+      border: 1px solid #FFFFFF;
+      border-radius: 35px;
+      transition: .3s;
+    }
+
+    .footer {
+      padding: 1rem 0;
+    }
+
+    .footer .btn.btn-social:hover {
+      color: var(--primary);
+    }
+
+    .footer .btn.btn-link {
+      display: block;
+      margin-bottom: 5px;
+      padding: 0;
+      text-align: left;
+      color: #FFFFFF;
+      font-size: 15px;
+      font-weight: normal;
+      text-transform: capitalize;
+      transition: .3s;
+    }
+
+    .footer .btn.btn-link::before {
+      position: relative;
+      content: "\f105";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-right: 10px;
+    }
+
+    .footer .btn.btn-link:hover {
+      letter-spacing: 1px;
+      box-shadow: none;
+    }
+
+    .footer .copyright {
+      padding: 25px 0;
+      font-size: 15px;
+      border-top: 1px solid rgba(256, 256, 256, .1);
+    }
+
+    .footer .copyright a {
+      color: var(--light);
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-info p {
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-info i {
+      margin-right: 0.5em;
+    }
+
+    .footer .footer-menu a {
+      margin-right: 15px;
+      padding-right: 15px;
+      border-right: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .newsletter {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .newsletter p {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer .footer-menu a:last-child {
+      margin-right: 0;
+      padding-right: 0;
+      border-right: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <img src="img/favicon1.png" alt="" width="70rem">
+      <a class="navbar-brand text-white" href="#">Tasty-Trails</a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item text-white">
+            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="product.html">Fruits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="service.html">Bakery-Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Explore
+            </a>
+            <ul class="dropdown-menu text-white">
+              <li><a class="dropdown-item" href="#Menu">Menu</a></li>
+              <li><a class="dropdown-item" href="#Service">Service</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="about.html">Our Team</a></li>
+            </ul>
+          </li>>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav-end -->
+
+  <!-- Header -->
+  <div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container my-3 py-3">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
+          <p class="text-white animated slideInLeft mb-4 pb-2">Order your favorite food online and get it delivered to
+            your doorstep.</p>
+          <!-- <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a> -->
+
+          <button class="button1">Book Now
+          </button>
+        </div>
+        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+          <img class="img-fluid" src="img/hero.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Start -->
+  <div class="container-xxl py-5 mt-5">
+    <div class="container">
+      <div class="row g-1">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="row position-relative h-100">
+            <div class="col-12 align-items-center">
+              <img class="img-fluid rounded" src="img/index-about-1.jpg" width="400px">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 about-sec">
+          <div class="h-100">
+            <h1 class="display-6 mb-4">Perfect blend of flavors with our mouthwatering pizzas and burgers</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quos adipisci quae sint laboriosam,
+              asperiores repellendus. Eligendi, cumque quos? Officia fuga eius quisquam quo totam enim minus hic harum
+              dolorum?</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quos adipisci quae sint laboriosam,
+              asperiores repellendus. Eligendi, cumque quos? Officia fuga eius quisquam quo totam enim minus hic harum
+              dolorum?</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quos adipisci quae sint laboriosam,
+              asperiores repellendus. Eligendi, cumque quos? Officia fuga eius quisquam quo totam enim minus hic harum
+              dolorum?</p>
+            <div class="row g-2 mb-4">
+              <div class="col-sm-6">
+                <i class="fa fa-check text-primary me-2"></i>Quality Pizza
+              </div>
+              <div class="col-sm-6">
+                <i class="fa fa-check text-primary me-2"></i>Custom Products
+              </div>
+              <div class="col-sm-6">
+                <i class="fa fa-check text-primary me-2"></i>Online Order
+              </div>
+              <div class="col-sm-6">
+                <i class="fa fa-check text-primary me-2"></i>Home Delivery
+              </div>
+            </div>
+            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- hero start-->
+  <div class="container-xxl py-5" id="Service">
+    <div class="container">
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-sm-6 wow fadeInUp">
+          <div class="service-item rounded pt-3">
+            <div class="p-4">
+              <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+              <h5>Master Chefs</h5>
+              <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item rounded pt-3">
+            <div class="p-4">
+              <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+              <h5>Quality Food</h5>
+              <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="service-item rounded pt-3">
+            <div class="p-4">
+              <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+              <h5>Online Order</h5>
+              <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="service-item rounded pt-3">
+            <div class="p-4">
+              <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+              <h5>24/7 Service</h5>
+              <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hero-end -->
+
+  <!-- Card sec -->
+  <div class="container mt-5 mb-5">
+    <h2 id="Menu">Discover Delicious Food</h2>
+    <p>
+      Choose from a wide range of mouthwatering dishes available for delivery.
+    </p>
+
+    <div class="d-flex ml-2">
+      <div class="row">
+
+        <div class="col-xl-2 col-lg-4 col-sm-4 w-5">
+          <div>
+            <img src="img/Pizza.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <a href="#" class="btn btn-primary ml-4">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-sm-4">
+          <div>
+            <img src="img/Burger.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <a href="#" class="btn btn-primary ml-4">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-sm-4">
+          <div>
+            <img src="img/Biryani_2.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <a href="#" class="btn btn-primary ml-4">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-sm-4">
+          <div>
+            <img src="img/Chinese.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <a href="#" class="btn btn-primary ml-4">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-sm-4">
+          <div>
+            <img src="img/Shakes.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <a href="#" class="btn btn-primary ml-4">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-sm-4">
+          <div>
+            <img src="img/Rolls.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <a href="#" class="btn btn-primary ml-4">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Card end -->
+
+  <!-- <section> start-->
+  <div>
+    <section class="pb-5 pt-8">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-span mb-3 shadow-lg">
+              <div class="card-body py-0">
+                <div class="row justify-content-center">
+                  <div class="col-md-5 col-xl-7 col-xxl-8 g-0 order-0 order-md-1"><img
+                      class="img-fluid w-100 fit-cover h-100 rounded-top rounded-md-end rounded-md-top-0"
+                      src="img/sanwich.jpg" alt="..." /></div>
+                  <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                    <h1 class="card-title mt-xl-5 mb-4">Best deals <span class="text-primary"> Crispy Sandwiches</span>
+                    </h1>
+                    <p class="fs-5 ">Enjoy the large size of sandwiches. Complete your meal with the perfect slice of
+                      sandwiches.</p>
+                    <div class="d-grid bottom-0"><a class="btn btn-lg btn-primary mt-xl-6" href="#!">PROCEED TO ORDER<i
+                          class="fas fa-chevron-right ms-2"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+    </section>
+    <section class="py-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-span mb-3 shadow-lg">
+              <div class="card-body py-0">
+                <div class="row justify-content-center">
+                  <div class="col-md-5 col-xl-7 col-xxl-8 g-0 order-md-0"><img
+                      class="img-fluid w-100 fit-cover h-100 rounded-top rounded-md-start rounded-md-top-0"
+                      src="img/chicken.jpg" alt="..." /></div>
+                  <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                    <h1 class="card-title mt-xl-5 mb-4">Celebrate parties with <span class="text-primary">Fried
+                        Chicken</span></h1>
+                    <p class="fs-5">Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out
+                      best deals for fried chicken.</p>
+                    <div class="d-grid bottom-0"><a class="btn btn-lg btn-primary mt-xl-6" href="#!">PROCEED TO ORDER<i
+                          class="fas fa-chevron-right ms-2"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+    </section>
+    <section class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-span mb-3 shadow-lg">
+              <div class="card-body py-0">
+                <div class="row justify-content-center">
+                  <div class="col-md-5 col-xl-7 col-xxl-8 g-0 order-0 order-md-1"><img
+                      class="img-fluid w-100 fit-cover h-100 rounded-top rounded-md-end rounded-md-top-0"
+                      src="img/pizza.png" alt="..." /></div>
+                  <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                    <h1 class="card-title mt-xl-5 mb-4">Wanna eat hot & <span class="text-primary">spicy Pizza?</span>
+                    </h1>
+                    <p class="fs-5">Pair up with a friend and enjoy the hot and crispy pizza pops. Try it with the best
+                      deals.</p>
+                    <div class="d-grid bottom-0"><a class="btn btn-lg btn-primary mt-xl-6" href="#!">PROCEED TO ORDER<i
+                          class="fas fa-chevron-right ms-2"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+    </section>
+  </div>
+  <!-- <section> end-->
+
+  <!-- Footer start-->
+  <div class="container-fluid bg-dark text-light footer pt-5 mt-5 ">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6 ">
+          <h4 class="section-title  text-start text-primary mb-4">Company</h4>
+          <div class="d-flex flex-column">
+            <a class="text-decoration-none text-white mb-1" href="">About Us</a>
+            <a class="text-decoration-none text-white mb-1" href="">Contact Us</a>
+            <a class="text-decoration-none text-white mb-1" href="">Reservation</a>
+            <a class="text-decoration-none text-white mb-1" href="">Privacy Policy</a>
+            <a class="text-decoration-none text-white mb-1" href="">Terms & Condition</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+          <div class="contact-info">
+            <p class="mb-2 margins"><i class="fa fa-map-marker-alt"></i>Mumbai Naka nashik</p>
+            <p class="mb-2 margins"><i class="fa fa-phone-alt"></i>937045809</p>
+            <p class="mb-2 margins"><i class="fa fa-envelope"></i>jayshinde4554@.com</p>
+          </div>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href="https://twitter.com/JayShin18755555"><i
+                class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social"
+              href="https://www.facebook.com/profile.php?id=100071240120392"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/jay_shinde__10/"><i
+                class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/jay-shinde-b5634325a/"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+          <h5 class="text-light fw-normal">Monday - Saturday</h5>
+          <h5 class="text-light fw-normal">Sunday</h5>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="newsletter">
+            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact Us</h4>
+            <p>Enter your email</p>
+            <div class="position-relative mx-auto" style="max-width: 400px;">
+              <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+              <button type="button" class="btn btn-primary py-2 position-absolute top-0  mt-5">SignUp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer end -->
+
+  <script src="https://kit.fontawesome.com/ef9a43ac85.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
